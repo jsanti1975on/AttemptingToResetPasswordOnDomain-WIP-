@@ -20,7 +20,7 @@ This document provides a step-by-step guide to resolve application crashes in le
 - **Exception Code**: c0000005 (Access Violation)
 
 ### Environment:
-- **OS**: Windows 10 (or newer versions)  
+- **OS**: Windows 7 (or newer versions)  
 - **Lab Type**: Isolated VLAN with legacy devices and systems.
 
 ### Symptoms
