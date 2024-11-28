@@ -1,3 +1,6 @@
+![email image](https://github.com/user-attachments/assets/f7056562-5545-4840-9849-4b999c5f8046)
+
+
 # Troubleshooting Legacy Application Crashes in a Controlled Lab Environment
 
 ## Objective
