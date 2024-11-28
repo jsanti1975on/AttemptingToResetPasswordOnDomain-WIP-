@@ -1,3 +1,10 @@
+
+
+
+
+==============(Below is the blog of my son)====================================
+
+
 Title explains all, My mentor set me up a domain and im assigned to change the password
 
 I researched and 2 common methods are PowerShell and Using Active Directory Users and Computers (ADUC)
