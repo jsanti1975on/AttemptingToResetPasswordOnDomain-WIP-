@@ -71,7 +71,7 @@ Compatibility Mode allows legacy applications to simulate an older Windows envir
 
 ### Using Compatibility Features:
 - Learn how Compatibility Mode emulates older environments for legacy applications.
-- Recognize limit ations of modern systems in supporting legacy software.
+- Recognize limitations of modern systems in supporting legacy software.
 
 ### Configuring a Controlled Lab:
 - Isolate legacy systems on VLANs to prevent compatibility issues with modern standards.
