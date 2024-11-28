@@ -1,6 +1,10 @@
 ![email image](https://github.com/user-attachments/assets/f7056562-5545-4840-9849-4b999c5f8046)
 
 
+https://github.com/user-attachments/assets/1ae53bff-145c-44b8-8629-c148b30255ea
+
+
+
 # Troubleshooting Legacy Application Crashes in a Controlled Lab Environment
 
 ## Objective
@@ -67,11 +71,7 @@ Compatibility Mode allows legacy applications to simulate an older Windows envir
 
 ### Using Compatibility Features:
 - Learn how Compatibility Mode emulates older environments for legacy applications.
-- Recognize limit
-
-https://github.com/user-attachments/assets/c5a73b5c-d81b-4f31-881c-bd34953490f0
-
-ations of modern systems in supporting legacy software.
+- Recognize limit ations of modern systems in supporting legacy software.
 
 ### Configuring a Controlled Lab:
 - Isolate legacy systems on VLANs to prevent compatibility issues with modern standards.
