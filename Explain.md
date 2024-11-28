@@ -1,31 +1,74 @@
-Title explains all, My mentor set me up a domain and im assigned to change the password
+# Title Explains All: Changing the Password on a Domain
 
-I researched and 2 common methods are PowerShell and Using Active Directory Users and Computers (ADUC)
+## Overview
+My mentor set me up with a domain, and I was assigned the task of changing the password. After researching, I found two common methods for accomplishing this:
 
-I decided to try powershell method first
-![IMG_0548](https://github.com/user-attachments/assets/2a68d9ca-3c82-49fd-b231-2fa0218e0de7)
+1. Using **PowerShell**
+2. Using **Active Directory Users and Computers (ADUC)**
 
+I decided to try the **PowerShell** method first.
 
+---
 
-I typed the command "Import-Module ActiveDirectory" but however it was not loaded
-![IMG_0549](https://github.com/user-attachments/assets/964405c4-bab9-4cdc-8a92-d984ed5e472e)
+## Attempt 1: Using PowerShell
 
+### PowerShell Command
+I typed the following command:
+```powershell
+Import-Module ActiveDirectory
+```
+**Outcome**:  
+The module did not load.
 
-I moved on and put Set-ADAccount -Identity "username" -ResetPassword "newpassword". This was blocked off as well so powershell is No-Go
-![IMG_0550](https://github.com/user-attachments/assets/b51cf63f-6379-401b-adee-9ad1c6a56eff)
+#### Import Module Error
+```plaintext
+The term 'Import-Module ActiveDirectory' is not recognized as the name of a cmdlet, function, script file, or operable program.
+```
 
+---
 
+### Second PowerShell Command
+Next, I tried the following command:
+```powershell
+Set-ADAccount -Identity "username" -ResetPassword "newpassword"
+```
+**Outcome**:  
+This command was also blocked. At this point, I realized PowerShell wasn't a viable option.
 
-From here it was most likely 2nd method so I manually went into my settings
-![IMG_0551](https://github.com/user-attachments/assets/b2dce64f-4bb8-4e97-b2ae-4e586a457bd0)
+#### Set-ADAccount Error
+```plaintext
+The term 'Set-ADAccount' is not recognized as the name of a cmdlet, function, script file, or operable program.
+```
 
+---
 
+## Attempt 2: Manual Navigation
 
-After several attempts of changing up the password to the point that it was completely new I would often keep getting this error:
-![IMG_0552](https://github.com/user-attachments/assets/37672f9d-a8a0-4221-8ebb-bfde1085b517)
+I manually navigated through the settings on my system. Despite trying several different password combinations, including completely new ones, I kept encountering this error:
 
+#### Password Change Error
+```plaintext
+The password does not meet the complexity requirements of the domain policy.
+```
 
+---
 
-After that my final method was by Using Active Directory Users and Computers (ADUC) and just by trying to run it windows could not find it. You can see I typed it correctly too.
-![IMG_0554](https://github.com/user-attachments/assets/28a727ca-585f-4532-acfe-d1c8ca82afcb)
+## Attempt 3: Using Active Directory Users and Computers (ADUC)
 
+As a final attempt, I tried using the **Active Directory Users and Computers (ADUC)** tool. However, when I searched for it, Windows was unable to locate it. I double-checked that I had typed the name correctly.
+
+#### ADUC Not Found
+```plaintext
+Windows cannot find 'dsa.msc'. Make sure you typed the name correctly, and then try again.
+```
+
+---
+
+## Conclusion
+After multiple attempts to change the password using PowerShell, manual navigation, and ADUC, I encountered various obstacles:
+
+1. **PowerShell**: The required commands or modules were unavailable.
+2. **Manual Navigation**: Domain policies prevented the password from being accepted.
+3. **ADUC**: The tool could not be located on the system.
+
+This experience highlighted the importance of verifying system configurations and permissions before proceeding with administrative tasks.
